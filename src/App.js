@@ -6,20 +6,36 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div>
+          <ul>{formatHeader(header)}</ul>
+        </div>
+        <div className='button'>{blueButton}</div>
       </header>
     </div>
   );
 }
+
+function formatHeader(header) {
+  return (
+  header.main + 
+  ' ' + header.session + 
+  ' ' + header.feedback + 
+  ' ' + header.contacts + 
+  ' ' + header.contacts + 
+  ' ' + header.about
+  )
+}
+
+const header = {
+  main: 'Главная',
+  session: 'Сеансы',
+  feedback: 'Отзывы',
+  contacts: 'Контакты',
+  about: 'Обо мне',
+  blog: 'Блог'
+}
+
+
+const blueButton =  <p>Записаться на сеанс</p>
 
 export default App;
