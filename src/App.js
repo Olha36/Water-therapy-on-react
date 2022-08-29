@@ -1,41 +1,62 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable react/prop-types */
+import React from 'react'
+import logo from './logo.svg'
+import './App.css'
 
-function App() {
+const blueButton = <p>Записаться на сеанс</p>
+
+// function getInfo(info) {
+//   return (
+//     info.main +
+//     info.sessions +
+//     info.feedback +
+//     info.contacts +
+//     info.news +
+//     info.about +
+//     info.blog
+//   )
+// }
+
+// const info = {
+//   main: 'Головна',
+//   sessions: 'Сеанси',
+//   feedback: 'Відгуки',
+//   contacts: 'Контакти',
+//   news: 'Новини',
+//   about: 'Про мене',
+//   blog: 'Блог',
+// }
+
+// const element = (
+//   <ul>
+//     <li>{getInfo(info)}</li>
+//   </ul>
+// )
+
+const headers = [
+  'Головна',
+  'Сеанси',
+  'Відгуки',
+  'Контакти',
+  'Новини',
+  'Про мене',
+  'Блог',
+]
+
+function ListItem(props) {
+  const { header } = props
+  const listItems = header.map((head) => <li key={head.toString()}>{head}</li>)
+  return <ul>{listItems}</ul>
+}
+
+export default function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <div>
-          <ul>{formatHeader(header)}</ul>
-        </div>
-        <div className='button'>{blueButton}</div>
+        <ListItem header={headers} />
+        <div className="button">{blueButton}</div>
       </header>
     </div>
-  );
-}
-
-function formatHeader(header) {
-  return (
-  header.main + 
-  ' ' + header.session + 
-  ' ' + header.feedback + 
-  ' ' + header.contacts + 
-  ' ' + header.contacts + 
-  ' ' + header.about
   )
 }
-
-const header = {
-  main: 'Главная',
-  session: 'Сеансы',
-  feedback: 'Отзывы',
-  contacts: 'Контакты',
-  about: 'Обо мне',
-  blog: 'Блог'
-}
-
-
-const blueButton =  <p>Записаться на сеанс</p>
-
-export default App;
