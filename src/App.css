@@ -5,16 +5,51 @@ body {
   background-color: #162831;
 }
 .App-header {
-  background-color: red;
   padding-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-bottom: 50px;
 }
-
-.App-link {
-  color: #61dafb;
+.App-header ul {
+  display: flex;
+  list-style-type: none;
 }
-
+.App-header ul>li {
+  margin-right: 50px;
+}
+.button {
+  background-color: #018ABE;
+}
+.button p {
+  padding: 9px 15px;
+}
+.session {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sessions h1 {
+  color: white;
+  margin: 172px 45px;
+}
+.decoration {
+  background-color: #018ABE;
+  width: 28px;
+  height: 14px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.pictures, .pics {
+  display: flex;
+}
+.pics {
+  flex-wrap: wrap;
+}
+.pictures img {
+  /* margin-right: 24px;
+  margin-bottom: 24px; */
+  margin: 0 24px 24px 0;
+}
