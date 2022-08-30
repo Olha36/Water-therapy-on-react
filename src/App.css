@@ -13,12 +13,16 @@ body {
   color: white;
   margin-bottom: 50px;
 }
-.App-header ul {
+.App-header div {
   display: flex;
   list-style-type: none;
 }
-.App-header ul>li {
+.App-header div > a {
+  cursor: pointer;
   margin-right: 50px;
+}
+.App-header div > a:hover {
+  color: lightblue;
 }
 .button {
   background-color: #018ABE;
@@ -53,4 +57,143 @@ body {
 }
 .pictures img {
   margin: 0 24px 24px 0;
+}
+.feedback {
+  display: flex;
+  justify-content: center;
+}
+.feedback1, .feedback3 {
+  background-color: #018ABE;
+  opacity: 0.4;
+  width: 500px;
+  height: 276px;
+  color: white;
+  padding: 40px 30px 71px;
+  border-radius: 10px;
+  align-self: center;
+  font-size: 13px;
+}
+.feedback1, .feedback2 {
+  margin-right: 50px;
+}
+.feedback2 {
+  background-color: #018ABE;
+  width: 636px;
+  height: 350px;
+  border-radius: 10px;
+  padding: 50px 60px 56px;
+  color: white;
+  font-size: 14px;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  margin: 60px auto 0px;
+}
+.white {
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+.grey {
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 3px;
+  opacity: 0.4;
+  margin-right: 20px;
+}
+.text {
+  margin-right: 84px;
+}
+.text h3 {
+  font-size: 24px;
+  line-height: 140%;
+  color: #fff;
+  font-weight: 700;
+}
+.text p {
+  font-size: 16px;
+  line-height: 23px;
+  color: #fff;
+  width: 466px;
+  align-self: center;
+}
+.left, .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right img {
+  margin-right: 84px;
+}
+.prices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.price {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 134px;
+  height: 250px;
+}
+.prices p {
+  color: white;
+  font-size: 18px;
+  line-height: 140%;
+  justify-content: center;
+  display: flex;
+}
+.maps {
+  display: flex;
+  margin-bottom: 90px;
+  justify-content: center;
+}
+.swimming-pool {
+  display: flex;
+  flex-direction: column;
+  margin-left: 48px;
+}
+.work-class, .work-class2 {
+  display: grid;
+  grid-template-columns: 70px 210px;
+  margin-left: 45px;
+  align-items: center;
+  color: #fff;
+}
+.background, .background2 {
+  background-color: #018ABE;
+  width: 392px;
+  height: 290px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+}
+.background h3, .background2 h3 {
+  margin-left: 45px;
+  color: #fff;
+}
+.regist {
+  display: flex;
+  align-items: center;
+  width: 155px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 9px 15px;
+}
+.regist p {
+  color: #018ABE;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+.footer p {
+  color: #fff;
+  font-style: bold;
+  font-size: 14px;
 }
