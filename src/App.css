@@ -45,11 +45,12 @@ body {
 .pictures, .pics {
   display: flex;
 }
+.pictures {
+  margin-left: 10px;
+}
 .pics {
   flex-wrap: wrap;
 }
 .pictures img {
-  /* margin-right: 24px;
-  margin-bottom: 24px; */
   margin: 0 24px 24px 0;
 }
